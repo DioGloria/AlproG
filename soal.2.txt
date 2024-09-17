@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char KataPertama[101];
+    char KataKedua[101];
+    
+    scanf("%s", KataPertama);
+    scanf("%s", KataKedua);
+    if(strlen(KataPertama) != strlen(KataKedua))
+        printf("BERBEDA");
+    else
+        if(strcmp(KataPertama,KataKedua) ==0)
+            printf("IDENTIK");
+    else
+        printf("MIRIP");
+    return 0;
+}
